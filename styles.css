@@ -7,23 +7,23 @@ body{
 }
 #parent{
     background-image: url("./background1.jpg");
-    width: fit-content;
-    background-size: cover;
-    background-position: center;
+    /* width: fit-content; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    /* background-position: center; */
     height: 105vh;
     margin-bottom: 0px;
 }
 #header-background{
-    width: fit-content;
+    /* width: fit-content; */
     display:flex;
     justify-content: space-between;
 }
-#logo{
-    height: 10px;
-    width: 60px;
-}
+
 img{
-    width: 100px;
+    width: 150px;
 }
 #menu-div{
   
@@ -34,8 +34,14 @@ img{
    align-items: center;
    padding: 10px;
    font-family: "Poppins", sans-serif;
-   margin-left: 900px;
+   color:white;
+  
    font-size: 20px;
+}
+#menu-div a:hover{
+    color:aqua
+    
+
 }
 #heading{
     margin-top: 50px;
@@ -53,10 +59,9 @@ img{
 #name{
     color: white;
    height: fit-content;
-   display: flex;
-   justify-content: center;
+   padding-left: 100px;
   font-size: 50px;
-  margin-right: 800px;
+  
 }
 #para{
     color: white;
@@ -66,14 +71,19 @@ img{
 }
 #contact-div{
     margin-top: 0;
-    height: 110vh;
-    margin-bottom: 50px;
-    width: 1520px;
-    margin-right: 600px;
+    height: 140vh;    
     background-image: url("./contact.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 #head-cu{
     text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+}
+#head-cu:hover{
+    color: blue;
 }
 #send-para{
     margin-left: 300px;
@@ -116,8 +126,122 @@ img{
     height: 300px;
 }
 #header-contact{
-    width: fit-content;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+
+#header-contact-2{
+    width: 100%;
     display:flex;
     justify-content: space-between;
     background-color: black;
+
 }
+#span-place:hover{
+    background-color: black;
+    color: aqua;
+}
+#span-food:hover{
+    
+    color: aqua;
+}
+
+
+#heading a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+#heading a:hover{
+    background-color: black;
+    color: aqua;
+    cursor: pointer;
+}
+
+#span-home{
+    text-decoration: none;
+    color: white;
+}
+#span-home:hover{
+    background-color: black;
+    color: aqua;
+    cursor: pointer;
+}
+
+#span-about:hover{
+    background-color: black;
+    color: aqua;
+}
+#span-contact:hover{
+    background-color: black;
+    color: aqua;
+
+}
+#span-home:hover{
+    background-color: black;
+    color: aqua;
+}
+#span-culture:hover{
+    background-color: black;
+    color: aqua;
+}
+#thanku{
+    display: flex;
+    justify-content: center;
+}
+#heart{
+    font-size: 100px;
+     text-align: center;
+   
+    
+     
+}
+#bye{
+   text-align: center;
+  
+    font-size: 50px;
+   position: absolute;
+   margin-top: 130px;
+}
+@media (max-width: 1423px){
+   #name-input{
+    margin-left: 10px;
+    width: 200px;
+   }
+   #email-input{
+    margin-left: 10px;
+    width: 200px;
+   }
+   #message-input{
+    margin-left: 10px;
+    width: 200px;
+   }
+   #send-btn{
+    margin-left: 10px;
+   }
+   #send-para{
+    margin-left: 10px;
+   }
+   #contact-info{
+    margin-left: 250px;
+    width: 200px;
+   }
+   a{
+    font-size: 20px;
+   }
+   #parent{
+    height: 400vh;
+    width: 200vh;
+   }
+   #contact-div{
+    height: 400vh;
+    width: 200vh;
+   }
+    }
+
+
